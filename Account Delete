@@ -1,0 +1,39 @@
+Flow for deleting selected account records from list --------------------
+
+Steps to follow-
+Go to salesforce setup - search flow - Create New flow
+Create these resources first -- By clicking in left called new resource --
+Varible name - ids, data type - text, click on allow multiple vales(collection), click on Available for input, click on Available for output
+Varible name - SingleAccountVAR, - data type - Record, Object - Account, This is single record varible
+Varible name - MassAccountVAR, data type - Record, click on allow multiple vales(collection), This is multiple record varible
+
+
+
+Now create flow -
+click on screen flow -
+add loop(Loop through Ids) on ids (Varible)
+(Now add assignment(Single Account Assignment) inside the loop 
+Variable                              Operator                      Value
+SingleAccountVAR > Account ID         Equals                  Current Item from Loop Loop through Ids)
+
+(Add another assignment(Mass Delete) inside the loop
+Variable                              Operator                      Value
+MassAccountVAR                         Add                        SingleAccountVAR)
+
+Now add Delete records after loop (Delete Account Records) --
+Click on Use the IDs stored in a record variable or record collection variable --  now add MassAccountVAR
+
+Now save the flow.
+
+
+Next step is to add button ---
+Now Click on object manager -- click on account -- click on list view layout -- click on default layout edit ---scroll down --- create custom button with the help of Custom button image ---- 
+after creating go back to defaut layout --- edit --- now you see this ------ just add button into right side its done.
+
+refresh org.
+
+
+
+
+
+

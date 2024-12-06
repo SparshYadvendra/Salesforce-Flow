@@ -27,7 +27,7 @@ Now save the flow.
 
 
 Next step is to add button ---
-Now Click on object manager -- click on account -- click on list view layout -- click on default layout edit ---scroll down --- create custom button with the help of Custom button image and add /flow/Delete_Accounts ---- 
+Now Click on object manager -- click on account -- click on list view layout -- click on default layout edit ---scroll down --- create custom button with the help of Custom button image(Custom button for account delete flow.png) and add /flow/Delete_Accounts ---- 
 after creating go back to defaut layout --- edit --- now you see this ------ just add button into right side its done.
 
 refresh org.
